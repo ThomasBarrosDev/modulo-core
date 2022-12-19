@@ -15,7 +15,7 @@ namespace VirtualTown.View
         public bool Showing { get { return m_Showing; } }
         public bool OnStack { get { return m_OnStack; } }
         public bool Focued { get { return m_Focused; } }
-        public static IUIFacade IUIFacade { get; set; }
+        public IUIFacade IUIFacade { get; set; }
 
         public void Pushed()
         {
