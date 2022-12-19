@@ -155,12 +155,6 @@
       },
       "url": "https://packages.unity.com"
     },
-    "com.vrglass.modulecore": {
-      "version": "file:Module Core",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
