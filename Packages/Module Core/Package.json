@@ -1,0 +1,14 @@
+{
+  "name": "com.vrglass.modulecore",
+  "version": "1.0.1",
+  "displayName": "Module Core",
+  "description": "...",
+  "unity": "2021.3",
+  "unityRelease": "8f1",
+  "author": {
+    "name": "VRGlass",
+    "email": "example@vrglass.com",
+    "url": "https://www.vrglass.com"
+  },
+  "type": "tools"
+}
