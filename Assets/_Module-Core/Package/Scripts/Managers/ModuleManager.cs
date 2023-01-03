@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
-using RiseStudio.Essentials.Http;
-using RiseStudio.Essentials.Debbuger;
+using VRGlass.Essentials.Http;
+using VRGlass.Essentials.Debbuger;
 using VirtualTown.Facade;
 
 namespace VirtualTown.Modules
