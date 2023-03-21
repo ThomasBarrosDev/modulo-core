@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 using VirtualTown.Enums;
 
 namespace VirtualTown.Avatar
@@ -23,7 +24,17 @@ namespace VirtualTown.Avatar
         //public bool CheckIfAvatarIsSetted();
 
         //public GameObject Model { get; }
+        public enum AvailableModels
+        {
+            None,
+            RegularMale,
+            RegularFamale,
+            AnãoMale,
+            AnãoFamale,
+            Robo
+        }
 
+        [Serializable]
         public struct ItemDataDTO
         {
             public struct MaterialSettings
@@ -51,8 +62,7 @@ namespace VirtualTown.Avatar
 
         public bool NewAvatar { get; set; }
         public string[] EquipedsItems();
-        public IEnumerator AvatarLoad(int idAvatarModel, Action<float> progress = null);
-        public IEnumerator AvatarSet(Action<float> progress);
+        public IEnumerator SetCurrentAvatar(AvailableModels available_Model, Vector3 instantiatePosition, Action<float> progressBar = null);
         public IEnumerator EquipItem(ItemDataDTO item, Action<float> progressBar = null);
         public void EquipItem(object item);
         public void UnequipItem(object item);
